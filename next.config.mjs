@@ -3,8 +3,8 @@ const nextConfig = {
 
 images:{domains: ["images.unsplash.com", "https://tomaslonnblad.github.io/",
 
+                  output: 'standalone*
 ]},
-
 
   reactCompiler: true,
   compiler: {
