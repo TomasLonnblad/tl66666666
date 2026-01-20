@@ -1,4 +1,4 @@
-"use client"
+
 import * as React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -36,4 +36,4 @@ export default function CarouselDemo() {
       <CarouselNext />
     </Carousel>
 )}
-exported function "generateStaticParams()
+
