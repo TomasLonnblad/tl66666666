@@ -8,18 +8,26 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-export default function CarouselDemo() {
+import Image from "next/image"
+export default function CarouselDemo() { 
+
+  const images=[
+  "https://tomaslonnblad.github.io/2.jpg", "https://tomaslonnblad.github.io/3.jpg",
+"https://tomaslonnblad.github.io/4.jpg",
+"https://tomaslonnblad.github.io/5.jpg",]
+
   return (
+   
     <Carousel className="w-full max-w-xs">
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+      {images.map((image, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
+            <div className="p-3">
+<img alt="sfsda" src={image}  width={300} height={200} />
+
+  
+ 
+
             </div>
           </CarouselItem>
         ))}
@@ -27,5 +35,4 @@ export default function CarouselDemo() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  )
-}
+)}
