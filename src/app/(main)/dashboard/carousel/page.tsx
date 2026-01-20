@@ -36,4 +36,4 @@ export default function CarouselDemo() {
       <CarouselNext />
     </Carousel>
 )}
-exported function "generateStaticParams()"
+exported function "generateStaticParams()
